@@ -1,0 +1,17 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Speech bubble with controller -->
+    <g>
+      <rect x="4" y="4" width="40" height="32" rx="12" fill="#2563eb"/>
+      <path d="M24 36 L20 44 L32 36 Z" fill="#2563eb"/>
+      <!-- Controller shape -->
+      <ellipse cx="24" cy="20" rx="12" ry="8" fill="#fff"/>
+      <rect x="22" y="17" width="4" height="6" rx="2" fill="#2563eb"/>
+      <circle cx="19" cy="20" r="1.5" fill="#2563eb"/>
+      <circle cx="29" cy="20" r="1.5" fill="#2563eb"/>
+      <circle cx="24" cy="23" r="1.2" fill="#2563eb"/>
+    </g>
+    <!-- Voxxi text -->
+    <text x="52" y="32" font-family="Montserrat, Arial, sans-serif" font-size="32" font-weight="bold" fill="#111827" letter-spacing="2">Voxxi</text>
+  </g>
+</svg> 

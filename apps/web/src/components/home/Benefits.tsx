@@ -2,89 +2,50 @@ import Image from "next/image";
 
 const benefits = [
   {
-    title: "Effortless Note-Taking",
-    description: "Capture thoughts effortlessly with our intuitive interface",
+    title: "Real-Time Voice Chat",
+    description: "Communicate instantly with your gaming companions for better teamwork and fun.",
+    image: "/images/bot.png",
+  },
+  {
+    title: "Game-Specific Matching",
+    description:
+      "Find or become a companion for your favorite games. No more random teammates!",
     image: "/images/goodNews.png",
   },
   {
-    title: "Seamless Sync",
+    title: "Trusted Community",
     description:
-      "Access your notes anytime, anywhere, with seamless cloud synchronization.",
-    image: "/images/cloudSync.png",
-  },
-  {
-    title: "Enhanced Productivity",
-    description:
-      "Let AI handle organization, so you can focus on what matters most.",
-    image: "/images/googleCalander.png",
-  },
-  {
-    title: "AI-Powered Insights",
-    description:
-      "Gain valuable insights with smart analytics based on your note patterns.",
-    image: "/images/bot.png",
+      "All companions are reviewed and rated by real gamers. Play with confidence.",
+    image: "/images/profile.png",
   },
 ];
 
 const Benefits = () => {
   return (
-    <section id="Benefits" className="relative pointer-events-none">
-      <Image
-        src={"/images/blue-circle.svg"}
-        width={503}
-        height={531}
-        alt=""
-        className="absolute hidden sm:block -left-40 -top-48 h-[531px]"
-      />
-      <div className="container py-16 px-2 md:px-0">
-        <p className="text-black text-[17px] sm:text-3xl not-italic font-medium leading-[90.3%] tracking-[-0.75px] text-center font-montserrat pb-2 sm:pb-[18px]">
-          Benefits
-        </p>
-        <h3 className=" text-black text-3xl sm:text-[57px] not-italic font-medium leading-[90.3%] tracking-[-1.425px] font-montserrat text-center pb-[46px] sm:pb-[87px]">
-          Why Choose UseNotes
-        </h3>
-
-        <div className="relative">
-          <div className="hidden sm:flex justify-between items-center absolute inset-0 -z-10">
-            {Array(3)
-              .fill(0)
-              .map((_, index) => (
-                <Image
-                  src="/images/cricle.svg"
-                  width={183}
-                  height={193}
-                  alt="line"
-                  key={index}
-                />
-              ))}
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 z-10 ">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="flex gap-2 sm:gap-7 bg-white items-center border rounded-[17px] py-4 px-2 sm:py-12 sm:px-6 border-solid border-[#B8B5B5] shadow-xl"
-              >
-                <div className=" min-w-16 sm:min-w-28">
-                  <Image
-                    src={benefit.image}
-                    width={100}
-                    height={100}
-                    alt="benefit"
-                    className="sm:w-[100px] w-[58px]"
-                  />
-                </div>
-                <div className="">
-                  <h4 className="text-black text-[24px] sm:text-[42px] not-italic font-medium leading-[90.3%] tracking-[-1.05px] pb-2 sm:pb-6 font-montserrat">
-                    {benefit.title}
-                  </h4>
-                  <p className="font-montserrat pb-2 text-black text-[17px] sm:text-3xl not-italic font-normal leading-[90.3%] tracking-[-0.75px]">
-                    {benefit.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+    <section id="Benefits" className="bg-blue-50 py-16">
+      <div className="container mx-auto px-4">
+        <h3 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-blue-900">Why Choose Voxxi?</h3>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          {benefits.map((benefit, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center bg-white rounded-xl p-8 max-w-xs w-full text-center"
+            >
+              <Image
+                src={benefit.image}
+                width={64}
+                height={64}
+                alt={benefit.title}
+                className="mb-4"
+              />
+              <h4 className="text-xl font-semibold text-gray-900 mb-2 font-montserrat">
+                {benefit.title}
+              </h4>
+              <p className="text-gray-600 text-base">
+                {benefit.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

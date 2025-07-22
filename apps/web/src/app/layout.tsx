@@ -3,14 +3,15 @@ import { Inter, Montserrat, Lato } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import ConvexClientProvider from "./ConvexClientProvider";
+import Navigation from "@/components/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 const lato = Lato({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Notes App",
-  description: "This is an app to take notes.",
+  title: "Voxxi",
+  description: "Find and connect with voice gaming companions for your favorite games.",
 };
 
 export default function RootLayout({
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, montserrat.className, lato.className)}>
-        <ConvexClientProvider>{children}</ConvexClientProvider>
+        <ConvexClientProvider>
+          <Navigation />
+          {children}
+        </ConvexClientProvider>
       </body>
     </html>
   );

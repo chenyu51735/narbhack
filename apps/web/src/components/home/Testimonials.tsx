@@ -5,26 +5,26 @@ const TestimonialsData = [
   {
     rating: 5,
     review:
-      "Great note-taking application! The AI features make note-taking a breeze",
+      "Voxxi helped me find the perfect teammate for ranked games. The voice chat made our teamwork so much better!",
     name: "Ryan Lowry",
-    designation: "Engineer & Author",
+    designation: "Valorant Player",
     profile: "/images/profile.png",
     feature: false,
   },
   {
     rating: 5,
     review:
-      "Really like the clean design of UseNotes. The AI-driven search is impressively accurate, adding a personal dimension to my notes. Fast and very easy to use.",
+      "I love how easy it is to connect with real gamers on Voxxi. My win rate has gone up and I've made new friends!",
     name: "John Collins",
-    designation: "Engineer & Author",
+    designation: "League of Legends Duo",
     profile: "/images/profile.png",
     feature: true,
   },
   {
     rating: 5,
-    review: "Simply brilliant! UseNotes has elevated my productivity.",
+    review: "As a companion, Voxxi lets me help others and earn at the same time. The voice experience is top-notch!",
     name: "Moe Partuj",
-    designation: "Student",
+    designation: "PUBG Voice Companion",
     profile: "/images/Moe-Partuj.jpeg",
     feature: false,
   },
@@ -48,7 +48,7 @@ const Testimonials = () => {
           Reviews
         </p>
         <h3 className=" text-black text-3xl sm:text-[57px] not-italic font-medium leading-[90.3%] tracking-[-1.425px] font-montserrat text-center pb-[20px] sm:pb-[87px]">
-          User Testimonials
+          What Gamers Say About Voxxi
         </h3>
 
         <div className="flex flex-wrap md:flex-nowrap justify-center items-start gap-4 pb-10 mb-10 relative">

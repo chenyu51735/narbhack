@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Voxxi
+
+Voxxi is a web app for finding and connecting with voice gaming companions. Users can sign up, set their profile, become a paid voice companion for specific games, and connect with others for real-time voice gaming sessions.
+
+## Features
+- Sign up / Sign in
+- Profile management
+- Become a voice companion for specific games
+- Set your price per hour
+- Search and filter companions by game, username, and more
+- Connect with companions for voice gaming sessions
 
 ## Getting Started
 

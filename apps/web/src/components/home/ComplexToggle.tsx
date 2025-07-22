@@ -20,7 +20,7 @@ export default function ComplexToggle({
             !isSummary ? "font-bold" : "font-medium"
           }`}
         >
-          Original Note
+          Text Chat
         </span>{" "}
       </Switch.Label>
       <Switch
@@ -43,7 +43,7 @@ export default function ComplexToggle({
         <span
           className={`text-gray-900 ${isSummary ? "font-bold" : "font-medium"}`}
         >
-          AI Summary
+          Voice Chat
         </span>{" "}
       </Switch.Label>
     </Switch.Group>
